@@ -1,0 +1,12 @@
+>>> def sumproblem(x,y):
+	sum = x + y
+	sentence = ' The sum of {} and {} is {}.'.format(x,y,sum)
+	print(sentence)
+
+	
+>>> def main():
+	sumproblem(2,3)
+	sumproblem(123467890123,535790269358)
+	a =  int(input("Enter an integer:"))
+	b = int(input("Enter another integer:"))
+	sumproblem(a,b)

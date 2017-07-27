@@ -1,0 +1,15 @@
+def amcbl(n):
+    n = n + 1
+    while True:
+        m = sum_divisors(n)
+        if m != n and sum_divisors(m) == n:
+            return n
+        n = n + 1
+
+def sum_divisors(n):
+    d, total = 1, 0
+    while d < n:
+        if n % d == 0:
+            total = total + d
+        d = d + 1
+    return total

@@ -1,0 +1,4 @@
+def add(g1,g2):
+    def addition(x):
+        return g1(x) + g2(x)
+    return addition

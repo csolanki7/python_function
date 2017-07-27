@@ -1,0 +1,4 @@
+def smooth(f,dx):
+    return lambda x:(f(x - dx) + f(x) + f(x + dx))/3
+
+square = lambda x: x ** 2

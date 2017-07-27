@@ -1,0 +1,23 @@
+def intersects(f, x):
+    """Returns a function that returns whether f intersects g at x."""\
+
+    def at_three intersects (square, 3)
+    def at_one intersects (identity, 1)
+    
+    def at_x(g):
+        return f(x) == g(x)
+    return at_x
+
+
+"""Returns a function that returns if f intersects g at x.
+>>> at_three = intscts (square, 3)
+>>> at_three(triple) # triple(3) == square(3)
+True
+>>> at_three(increment)
+False
+>>> at_one = intscts (identity, 1)
+>>> at_one(square)
+True
+>>> at_one(triple)
+False
+"""

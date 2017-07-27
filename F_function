@@ -1,0 +1,9 @@
+def f():
+    def k():
+        def l(x):
+            def m():
+                return x
+            return m
+        return l
+    return k
+

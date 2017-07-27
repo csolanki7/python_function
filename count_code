@@ -1,0 +1,29 @@
+def cnt_cond(f):
+    def a(n):
+        count = 0
+        for i in range(1,n+1):
+            if f(n,i):
+                count += 1
+        return count
+    return a
+
+print(cnt_cond(lambda n, i: n % i == 0)(12))
+
+def is_prime(n):
+    for i in range(2,n):
+        if (n%i == 0):
+            return False
+    else:
+        return True
+
+is_prime(5)
+
+def cnt_cond(f):
+    def a(n):
+        count = 0
+        for i in range(2,n+1):
+            if f(i):
+                count += 1
+        return count
+    return a
+
